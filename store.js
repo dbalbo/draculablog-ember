@@ -5,15 +5,17 @@ var posts = [
     body:"this is nonsense that I have to put so that the computer can read it. It is wasting my time."
       },
     {
-      id:'2',
-      title:"The Count",
-      body:"Another time waster, but it seems to be repairing the stupid syntax errors."
 
-    },
-    {
       id:'3',
       title:"Thievery",
       body:"Thieves. All about thieves."
+
+    },
+    {
+      id:'2',
+      title:"The Count",
+      body:"Another time waster, but it seems to be repairing the stupid syntax errors."
+      
 
      }
   ];
