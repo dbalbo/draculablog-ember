@@ -1,14 +1,19 @@
-<div class="container">
-  <nav class="navbar navbar-default" role='navigation'>
-    <ul class='nav navbar-nav'>
-      <li>{{#link-to 'posts'}}Posts{{/link-to}}</li>
-      <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-    </ul>
-  </nav>
-  
+
+
   <h1>About Dracula</h1>
 
   <p> Drac is a cool and handsome man. He is more popular and powerful than 2001 version of Brittany Spears. He is everything. He kills people for blood, but in doing so he gives them eternal life(like The Lost Boys)
     blah blah blah this is just filler at this point. Enjoy!</p>
-  </div>
+
+
+<button class="btn btn-primary" {{action 'showRealName'}}>Click here to learn Drac's real name!</button>
+
+
+{{#if isPictureShowing}}
+<button class="btn btn-info" {{action 'hidePicture'}}> Hide that face if you can't handle it!</button>
+<p><img
+  src="http://upload.wikimedia.org/wikipedia/en/2/29/Count_von_Count_kneeling.png"
+  alt="A photo pf Drac"></p>
+  {{else}}
+    <button class="btn btn-info" {{action 'showPicture'}}>Click here to see a picture</button>
+  {{/if}}
